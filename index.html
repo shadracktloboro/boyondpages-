@@ -204,6 +204,7 @@
     max-width:920px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;
   }
   .strip-item{flex:1;min-width:140px;text-align:center;}
+  .strip-icon{width:30px;height:30px;margin:0 auto 10px;display:block;}
   .strip-num{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--gold-light);}
   .strip-label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(245,241,232,0.78);margin-top:6px;}
 
@@ -228,6 +229,8 @@
   }
   .author-photo img{width:100%;height:100%;object-fit:cover;object-position:60% 22%;}
   .author-text{flex:1;min-width:280px;text-align:left;}
+  .author-signature{height:64px;width:auto;margin-bottom:8px;}
+  @media(max-width:640px){.author-signature{margin:0 auto 8px;}}
   .author-text h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4vw,36px);margin-bottom:6px;}
   .author-role{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:18px;}
   .author-text p:last-child{font-size:15.5px;line-height:1.7;color:var(--muted-dark);max-width:440px;}
@@ -354,14 +357,23 @@
 <section class="strip">
   <div class="strip-inner">
     <div class="strip-item">
-      <div class="strip-num">5</div>
+      <svg class="strip-icon" viewBox="0 0 24 24" fill="none" stroke="#e3c565" stroke-width="1.4">
+        <path d="M12 6.5c-1.5-1.2-3.6-1.5-5.5-1V17c1.9-.5 4-.2 5.5 1M12 6.5c1.5-1.2 3.6-1.5 5.5-1V17c-1.9-.5-4-.2-5.5 1M12 6.5V18" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="strip-num">3</div>
       <div class="strip-label">Titles</div>
     </div>
     <div class="strip-item">
+      <svg class="strip-icon" viewBox="0 0 24 24" fill="none" stroke="#e3c565" stroke-width="1.4">
+        <path d="M12 4v10m0 0-3.5-3.5M12 14l3.5-3.5M6 17.5v1A1.5 1.5 0 0 0 7.5 20h9a1.5 1.5 0 0 0 1.5-1.5v-1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
       <div class="strip-num">100%</div>
       <div class="strip-label">Digital &amp; Instant</div>
     </div>
     <div class="strip-item">
+      <svg class="strip-icon" viewBox="0 0 24 24" fill="none" stroke="#e3c565" stroke-width="1.4">
+        <path d="M7.5 18a4 4 0 0 1-.5-7.97 5 5 0 0 1 9.6-1.78A4.5 4.5 0 0 1 16.5 18h-9Z" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
       <div class="strip-num">24/7</div>
       <div class="strip-label">Access</div>
     </div>
@@ -384,7 +396,7 @@
     </div>
     <div class="author-text">
       <div class="section-label">About the Author</div>
-      <h2>Shadrack Tloboro</h2>
+      <img class="author-signature" src="assets/name-signature-cutout.png" alt="Shadrack Tloboro">
       <p class="author-role">Author · Speaker · Mentor</p>
       <p>Dedicated to inspiring individuals to unlock their potential, overcome challenges, and create a life of meaning and impact.</p>
     </div>
