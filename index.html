@@ -99,7 +99,7 @@
     border:1px solid var(--gold);border-radius:50%;
     overflow:hidden;background:var(--ink);
   }
-  .hero-mark video{width:118%;height:118%;object-fit:cover;}
+  .hero-mark img{width:118%;height:118%;object-fit:cover;}
   .eyebrow{
     font-size:11.5px;letter-spacing:4px;text-transform:uppercase;
     color:var(--gold-light);margin-bottom:20px;font-weight:600;
@@ -293,7 +293,10 @@
 <header class="hero">
   <div class="ribbon"></div>
   <div class="hero-mark">
-    <video src="assets/beyondpages-logo-animated.mp4" poster="assets/logo-video-poster.png" autoplay muted loop playsinline aria-label="Beyond Pages animated logo"></video>
+    <picture>
+      <source srcset="assets/logo-animated.webp" type="image/webp">
+      <img src="assets/logo-animated.gif" alt="Beyond Pages animated logo">
+    </picture>
   </div>
   <div class="eyebrow">Inspire · Empower · Transform</div>
   <h1 class="brand">Beyond <em>Pages</em></h1>
